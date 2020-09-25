@@ -7,12 +7,12 @@
       <li
         :class="{'puzzle': true, 'puzzle-empty': puzzle === ''}"
         v-for="(puzzle, index) in puzzleComp"
-        :key="index"
+        :key="puzzle"
         v-text="puzzle"
         @click="swap(index)"
       ></li>
       </transition-group>
-    {{depth}}
+    <h2>Сложность:</h2>
     <div>
       <select :value="depth" @input="reRender">
       <option disabled value="">Выберите один из вариантов</option>
@@ -134,7 +134,7 @@ export default {
   }
 
   .shuffle-move {
-    transition: transform 3s;
+    transition: transform 1s;
   }
 
   .shuffle-enter-active, .shuffle-leave-active {
