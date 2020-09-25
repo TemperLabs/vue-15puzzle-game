@@ -107,7 +107,7 @@ export default {
     flex-wrap: wrap;
     margin-bottom: 40px;
     padding: 0;
-    background: #ccc;
+    background: #c17ccc;
     list-style: none;
   }
 
@@ -122,11 +122,14 @@ export default {
     box-shadow: 1px 1px 4px;
     text-shadow: 1px 1px 2px #B9B4B4;
     cursor: pointer;
+    z-index: 5;
   }
 
   .puzzle-empty {
-    background: #a96ecc;
+    background: transparent;
+    border: none;
     box-shadow: inset 2px 2px 18px;
+    z-index: 1;
   }
 
   .btn-reset {

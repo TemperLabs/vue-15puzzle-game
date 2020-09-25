@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 !/usr/bin/env sh
 
 set -e
@@ -11,6 +10,6 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:/TemperLabs/vue-15puzzle-game.git master:gh-pages
+git push -f git@github.com:TemperLabs/vue-15puzzle-game.git master:gh-pages
 
 cd -
